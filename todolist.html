@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List Application</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            height: 600px;
+            
+        }
+        form {
+            width: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(237, 234, 248);
+            overflow: auto;
+            
+            
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+            margin-top: 20px;
+            
+        }
+        input, ul {
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+        input[type='text'] {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        input[type='button'] {
+            width: 70px;
+            background-color: blue;
+            color: white;
+            
+        }
+        ul {
+            position: relative;
+            width: 315px;
+            list-style-type: none;
+            display: hidden;
+
+        }
+        ul li {
+            text-align: center;
+            background-color: rgb(248, 248, 248);
+            color: black;
+            margin-top: 1px;
+            padding: 4px;
+            border: 1px solid rgb(81, 81, 82);
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+        .list {
+            border: 0;
+        }
+        H1{
+            text-align: center;
+        }        
+        #additem {
+            position: relative;
+            left: 170px;
+        }
+
+        #remove {
+            position: relative;
+            left: 25px;
+        }
+
+        h4 {
+            text-align: center
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <h4>List your favorite foods here</h4> 
+        <ul id="list" class="list">
+            <li>Pasta</li>
+            <li>Rice</li>
+            <li>Chicken</li>
+        </ul>
+        <input type="text" id="textinput" style="display: none">
+        <input type="button" value="Add" id="add" style="display: none">
+        <input type="button" value="Remove" id="remove">
+        <input type="button" value="Add item" id="additem">
+
+    </form>
+    <script src="jquery.js"></script>
+    <script src="todolist.js"></script>
+</body>
+</html>
