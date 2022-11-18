@@ -1,24 +1,25 @@
-// function addItem() {
-//     var element = document.getElementById('list');
-//     var newEl = document.createElement('li');
-//     var elValue = document.getElementById('additem').value;
+// This will pure javascript 
 
-//     if (elValue) {
-//         var text = document.createTextNode(elValue);
-//         newEl.appendChild(text);
-//         element.appendChild(newEl);
-//         document.getElementById('additem').value = "";
-//     }
+function addItem() {
+    var element = document.getElementById('list');
+    var newEl = document.createElement('li');
+    var elValue = document.getElementById('additem').value;
+
+    if (elValue) {
+        var text = document.createTextNode(elValue);
+        newEl.appendChild(text);
+        element.appendChild(newEl);
+        document.getElementById('additem').value = "";
+    }
     
-// }
+}
 
 
-// var button = document.getElementById('button');
+var button = document.getElementById('button');
+button.addEventListener('click', addItem, false);
 
-
-
-// button.addEventListener('click', addItem, false);
-
+// This will use JQuery to make the same program
+        // you can use either of these codes and comments other
 $(function() {
     $('#additem').on('click', function()  {
         $('#add').add('#textinput').removeAttr('style');
